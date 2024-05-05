@@ -1,0 +1,16 @@
+{
+    "testFiles": "**/*.feature",
+    "compilerOptions": {
+        "types": ["cypress", "cypress-file-upload"]
+    },
+    "e2e":{
+        "experimentalSessionAndOrigin": true,
+        "baseUrl": "https://opensource-demo.orangehrmlive.com/"
+    },
+    "env":{
+        "userData": {
+            "username": "Admin",
+            "password": "admin123"
+        }
+    }
+}

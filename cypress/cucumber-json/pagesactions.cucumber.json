@@ -1,0 +1,111 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Registro de Empleados",
+    "line": 1,
+    "id": "registro-de-empleados",
+    "tags": [],
+    "uri": "pagesactions.feature",
+    "elements": [
+      {
+        "id": "registro-de-empleados;registro-exitoso-de-un-empleado",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Registro exitoso de un empleado",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "admin is logged in",
+            "result": {
+              "status": "passed",
+              "duration": 5275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "se encuentra en el dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 2087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "me encuentro en la sección de Registro de Empleados",
+            "result": {
+              "status": "passed",
+              "duration": 4755000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Campo",
+                      "Valor"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "John"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Middle Name",
+                      "Peralta"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Mendoza"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "ingreso los siguientes datos del nuevo empleado",
+            "result": {
+              "status": "passed",
+              "duration": 3032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "veo un mensaje de éxito que indica que el registro se realizó correctamente",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "los datos del empleado registrado coinciden con los datos ingresados",
+            "result": {
+              "status": "passed",
+              "duration": 5940000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
