@@ -42,8 +42,8 @@ pipeline{
                         echo "Running tests on Chrome"
                         // Coloca aquí los comandos para ejecutar tus pruebas en Chrome
                         sh "export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-                        sh "npm install"
-                        sh "npx cypress run"
+                        sh "npm install || exit 1"
+                        sh "npx cypress run || exit 1"
                     }
                 }
             }
