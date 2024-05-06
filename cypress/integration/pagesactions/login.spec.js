@@ -7,6 +7,8 @@ Given("admin is logged in", () => {
 })
 
 And("se encuentra en el dashboard", () => {
+  cy.clearCookies() // Limpiar cookies
+  cy.clearLocalStorage() // Limpiar almacenamiento local
   cy.visit("/")
   cy.wait(1000)
   cy.url().should("contain", "/dashboard/index")
