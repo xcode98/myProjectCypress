@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Test on Chrome') {
           steps {
-            sh 'cd cypress && npm i && npx cypress run'
+            sh 'npm i && npx cypress run'
           }
         }
 
