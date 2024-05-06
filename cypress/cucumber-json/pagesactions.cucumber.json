@@ -22,7 +22,7 @@
             "name": "admin is logged in",
             "result": {
               "status": "passed",
-              "duration": 12364000000
+              "duration": 6600000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "se encuentra en el dashboard",
             "result": {
               "status": "passed",
-              "duration": 2012000000
+              "duration": 1956000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "me encuentro en la sección de Registro de Empleados",
             "result": {
               "status": "passed",
-              "duration": 4837000000
+              "duration": 4515000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "ingreso los siguientes datos del nuevo empleado",
             "result": {
               "status": "passed",
-              "duration": 2976000000
+              "duration": 2979000000
             }
           },
           {
@@ -90,9 +90,8 @@
             "line": 14,
             "name": "veo un mensaje de éxito que indica que el registro se realizó correctamente",
             "result": {
-              "status": "failed",
-              "duration": 4001000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-toast`, but never found it.\n    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress/integration/pagesactions.feature:96:24)\n    at Context.resolveAndRunStepDefinition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress/integration/pagesactions.feature:12424:29)\n    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress/integration/pagesactions.feature:11745:35)"
+              "status": "passed",
+              "duration": 25000000
             }
           },
           {
@@ -101,7 +100,8 @@
             "line": 15,
             "name": "los datos del empleado registrado coinciden con los datos ingresados",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5987000000
             }
           }
         ]

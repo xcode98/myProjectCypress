@@ -3,13 +3,15 @@ import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 let datosEmpleados
 
 Given("admin is logged in", () => {
+  cy.clearCookies() // Limpiar cookies
+  cy.clearLocalStorage() 
   cy.SignIn()
 })
 
 And("se encuentra en el dashboard", () => {
-  cy.clearCookies() // Limpiar cookies
-  cy.clearLocalStorage() // Limpiar almacenamiento local
+  
   cy.visit("/")
+  // Limpiar almacenamiento local
   cy.wait(1000)
   cy.url().should("contain", "/dashboard/index")
 })
