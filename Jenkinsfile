@@ -7,5 +7,22 @@ pipeline {
       }
     }
 
+    stage('Test on Chrome') {
+      parallel {
+        stage('Test on Chrome') {
+          steps {
+            sh 'cd cypress && npm i && npx cypress run'
+          }
+        }
+
+        stage('logs') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+      }
+    }
+
   }
 }
