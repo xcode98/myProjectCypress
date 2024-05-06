@@ -3,7 +3,7 @@ pipeline{
     
 
     tools {
-        nodejs 'node' 
+        nodejs 'Node' 
     }
 
     options{
@@ -41,8 +41,8 @@ pipeline{
                     steps {
                         echo "Running tests on Chrome"
                         // Coloca aquí los comandos para ejecutar tus pruebas en Chrome
-                        sh "/usr/local/bin/npm install || exit 1"
-                        sh "/usr/local/bin/npx cypress run || exit 1"
+                        sh "npm install || exit 1"
+                        sh "npx cypress run || exit 1"
                     }
                 }
             }
