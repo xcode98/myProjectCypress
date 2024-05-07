@@ -26,7 +26,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker build -f Dockerfile .'
+        sh 'docker build -f myProjectCypress/Dockerfile .'
       }
     }
 
